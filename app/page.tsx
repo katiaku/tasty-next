@@ -1,25 +1,16 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import Image from "next/image";
 
-export default function Home() {
-  const recipes = [
-    {
-      id: 1,
-      name: "Chicken Sandwich",
-      cuisine: "American",
-      servings: 4,
-      prepTimeMinutes: 4,
-      cookTimeMinutes: 5,
-    },
-    {
-      id: 2,
-      name: "Pizza",
-      cuisine: "Italian",
-      servings: 4,
-      prepTimeMinutes: 4,
-      cookTimeMinutes: 5,
-    },
-  ];
+const getRecipes = async () => {
+  const response = await fetch('https://dummyjson.com/recipes');
+  const data = await response.json();
+  return data.recipes;
+};
+
+export default async function Home() {
+
+  const recipes = await getRecipes();
 
   const cuisines: Array<string> = [
     "All",
@@ -57,7 +48,15 @@ export default function Home() {
             key={`${recipe.name}-${idx}`}
             className="flex flex-col bg-orange-50 hover:scale-105 ease-in duration-200 xl:min-h-[600px] fancyGradient"
           >
-            <CardHeader>{/** image */}</CardHeader>
+            <CardHeader>
+              <Image
+                src="/recipe.image"
+                alt="recipe.name"
+                width={500}
+                height={500}
+                className="bg-cover rounded-md shadow-xl"
+              />
+            </CardHeader>
             <CardContent>
               <CardTitle className="uppercase lg:text-3xl relative font-bold line-clamp-2">
                 {recipe.name}
