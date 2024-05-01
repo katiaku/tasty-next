@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { RecipeType } from "@/types";
 import Image from "next/image";
 
 const getRecipes = async () => {
@@ -43,7 +44,7 @@ export default async function Home() {
       </div>
 
       <div className="grid grid-cols- md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-x-10 gap-y-20 xl:gap-y-32 xl:pt-32 pt-12 pb-40">
-        {recipes.map((recipe, idx) => (
+        {recipes.map((recipe: RecipeType, idx: number) => (
           <Card
             key={`${recipe.name}-${idx}`}
             className="flex flex-col bg-orange-50 hover:scale-105 ease-in duration-200 xl:min-h-[600px] fancyGradient"
