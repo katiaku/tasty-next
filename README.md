@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tasty Next Recipe
 
-## Getting Started
+`Tasty Next Recipe` is a web application designed to inspire your culinary adventures by providing a collection of delicious dishes from various cuisines. With a user-friendly interface, you can explore different recipes, filter them by cuisine, and access detailed cooking instructions effortlessly.
 
-First, run the development server:
+## Features
 
+- Main Page: Discover a wide range of dishes displayed in visually appealing cards.
+- Filtering: Easily filter recipes by cuisine to find exactly what you're craving.
+- Recipe Details: Click on a dish card to view detailed information and cooking instructions on the recipe page.
+- Built with `Next.js`, `TypeScript`, and `Tailwind`: Utilizes modern web development technologies for optimal performance and maintainability.
+
+## Installation
+
+To run `Tasty Next Recipe` on your local machine, follow these steps:
+
+Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/katiaku/tasty-next.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Navigate to the project directory:
+```bash
+cd tasty-next-recipe
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Install dependencies using `npm`:
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Start the development server:
+```bash
+npm run dev
+```
 
-## Learn More
+Open your web browser and go to http://localhost:3000 to access the application.
 
-To learn more about Next.js, take a look at the following resources:
+## Tutorial Source
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`Tasty Next Recipe` is based on the tutorial provided by <a href="https://www.freecodecamp.org/">freeCodeCamp</a>, which you can watch on <a href="https://www.youtube.com/watch?v=JB1aKAoj2o0">YouTube</a>. This tutorial offers valuable insights into building web applications with Next.js, TypeScript, and Tailwind CSS.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you encounter any issues or have suggestions for improvement, please don't hesitate to submit an issue.
