@@ -6,6 +6,7 @@ export type RecipeType = {
     cuisine: string;
     difficulty: string;
     ingredients: Array<string>;
+    instructions: Array<string>;
     rating: number;
     reviewCount: number;
     servings: string;
