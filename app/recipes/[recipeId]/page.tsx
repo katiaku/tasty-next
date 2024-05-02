@@ -33,32 +33,32 @@ export default async function Page({
           <h1 className="text-4xl lg:text-6xl my-8 uppercase">{recipe.name}</h1>
           <div className="grid grid-cols-3 gap-12">
             <div className="flex flex-col">
-              <p className="text-xl lg:text-3xl uppercase">🍽️ Serves</p>
-              <p className="text-gray-800 text-2xl lg:text-3xl font-bold">
+              <p className="text-xl lg:text-3xl">🍽️ Serves</p>
+              <p className="text-gray-800 text-md font-bold">
                 {recipe.servings}
               </p>
             </div>
             <div className="flex flex-col">
-              <p className="text-xl lg:text-3xl uppercase">⏳ Prep Time</p>
-              <p className="text-gray-800 text-2xl lg:text-3xl font-bold">
+              <p className="text-xl lg:text-3xl">⏳ Prep Time</p>
+              <p className="text-gray-800 text-md font-bold">
                 {recipe.prepTimeMinutes} min
               </p>
             </div>
             <div className="flex flex-col">
-              <p className="text-xl lg:text-3xl uppercase">⏱️ Cook Time</p>
-              <p className="text-gray-800 text-2xl lg:text-3xl font-bold">
+              <p className="text-xl lg:text-3xl">⏱️ Cook Time</p>
+              <p className="text-gray-800 text-md font-bold">
                 {recipe.cookTimeMinutes} min
               </p>
             </div>
             <div className="flex flex-col">
-              <p className="text-xl lg:text-3xl uppercase">🍔 Cuisine</p>
-              <p className="text-gray-800 text-2xl lg:text-3xl font-bold">
+              <p className="text-xl lg:text-3xl">🍔 Cuisine</p>
+              <p className="text-gray-800 text-md font-bold">
                 {recipe.cuisine}
               </p>
             </div>
             <div className="flex flex-col">
-              <p className="text-xl lg:text-3xl uppercase">🔥 Difficulty</p>
-              <p className="text-gray-800 text-2xl lg:text-3xl font-bold">
+              <p className="text-xl lg:text-3xl">🔥 Difficulty</p>
+              <p className="text-gray-800 text-md font-bold">
                 {recipe.difficulty}
               </p>
             </div>
@@ -70,7 +70,7 @@ export default async function Page({
             src={recipe.image}
             width="400"
             height="400"
-            className="w-96 h-96 lg:h-[600px] lg:w-[600px]"
+            className="w-96 h-96 lg:h-[600px] lg:w-[600px] rounded-xl shadow-md"
           />
         </div>
       </div>

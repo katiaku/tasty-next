@@ -32,12 +32,12 @@ export default function BadgeFilter() {
     });
   };
   return (
-    <div>
+    <div className="flex justify-center flex-wrap">
       {cuisines.map((cuisine, idx) => (
         <Badge
           key={`${cuisine}-${idx}`}
           variant={"outline"}
-          className="border-orange-800 text-gray-900 text-lg mx-2 my-1 hover:cursor-pointer bg-orange-50 hover:scale-110 ease-in duration-200"
+          className="text-slate-100 shadow-lg text-lg mx-2 my-1 px-4 hover:cursor-pointer bg-slate-600 hover:scale-110 ease-in-out duration-400"
           onClick={(e) => handleOnClick(e, cuisine)}
         >
           {cuisine}
